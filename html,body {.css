@@ -1,0 +1,145 @@
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Ariel,Helvetica,sans-serif;
+	background-color: pink;
+	line-height: 1.05;
+	padding-bottom: 1000;
+}
+
+/* Latihan 1 */
+.container-satu {
+	width: 800px;
+	margin: 50px auto;
+	background-color: orange;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* Latihan 2 */
+.container-dua {
+	width: 800px;;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.namalengkap {
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.nama.lengkap { background-color: pink;
+}
+.nim { background-color: red;
+}
+.jurusan { background-color: orange;
+}
+
+/* Latihan 3 */
+.container-tiga {
+	max-width: 800px;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.thumbnail {
+	width: 50%;
+}
+
+.thumbnail img {
+	width: 100%;
+
+}
+
+/* Latihan 4 */
+.container-empat {
+	width: 800px;
+	margin: 50px auto;
+	display: flex;
+}
+
+.card {
+	border: 1px solid yellow;
+	border-radius: 10px;
+	background-color: yellow;
+	overflow:hidden;
+	margin: 10px;
+	flex: 1;
+}
+
+.card .header {
+	height: 150px;
+	background-color: gold;
+}
+
+.card.content {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.card.besar {
+	transform: scale(1.12);
+}
+
+/*Latihan 5 */
+.container-lima {
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	border: 5px solid putih;
+	display: flex;
+}
+
+.kotak {
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	text-align: center;
+	color: white;
+	margin: auto;
+	display: flex;
+}
+
+.kotak span{
+	margin: auto
+}
+
+/* responsive */
+@media( min-width: 600px ) {
+	container-dua {
+		display: flex;
+		justify-content: space-between;
+}
+
+.namalengkap {
+	width: 30%
+  }
+
+  .thumbnail {
+  	width: 25%;
+  }
+}

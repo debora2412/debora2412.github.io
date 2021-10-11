@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>WEBSITE SAYA</title>
+	 <meta name="Viewport" content="width=devide-width, initial-scale=1, maximum-scale=1">
+	 <style>
+	     <body>{
+		     background-color:orange;
+			 fond-family: sans-serif;
+		}
+		.awal{
+		     width: 550px;
+			 text-align: center;
+			 box-shadow: 0 0 3px; rgba(0,0,0,.6);
+			 border-radius: 20px;
+			 padding: 20px auto;
+			 position: absolute;
+			 left: 54%;
+			 top: 54%;
+			 transform: translate(-55%,-55%);
+		}
+		table{
+		    background: purple;
+			margin:auto;
+			color: gray;
+			width: 150%;
+		}
+		.container{
+		    font-size: 25px;
+			padding: 20px 15px;
+		}
+		h1{
+		    text-align: center;
+			background-color: gold;
+			color: silver;
+			padding-top: 25px;
+			padding-bottom: 30px;
+		}
+		.awal img{
+		     width: 150px;
+		}
+		.awal:hover{
+		     box-shadow: 0 0 5px rgba(0,0,0,5);
+			 transition: .3s;
+		
+		}
+		.awal button{
+		     padding: 25px 25px;
+			 border: none;
+			 cursor: pointer;
+			 background-color: yellow;
+			 color: gray;
+			 letter-spacing: 2px;
+		}
+		.awal button:hover{
+		     background-color: brown;
+			 }
+			 
+			 .awal h1, .awal img .awal h4{
+			      margin-bottom: 25px;
+			}
+			@media only screen and (max-width: 630px){
+			    body{
+				         background-color: pink;
+				}
+				.table{
+				    width:110%;
+				}
+			     h1{
+				     text-align: center;
+					 background-color:blue;
+					 color:gray;
+					 width:110%;
+					 margin: auto;
+				}
+			     td{
+				      padding: 15px;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+		     function total(){
+			     var item=[27000, 10000, 17000, 20000, 25000];
+				 var total= 1,hasil=0;
+				 for(let index= 0; index < item.length; index++){
+				     total= item[index] * document.getElementById("item"+(index+1)).value;
+					 hasil+= total;
+				}
+				document.getElementById("hasil").value= "Rp "+hasil+",00";
+			}
+			
+			function awalAPP(){
+			    document.getElementById("aplikasi").innerHTML = `
+				<div class="container">
+				     <audio hidden autoplay>
+					     <source src="c.mp3" type="audio/mpeg">
+						 Browsermu tidak mendukung tag audio
+					</audio>
+					<span class="judul-website">
+					     <h1>APLIKASI KASIR SEDERHANA</h1>
+					</span>
+				<div class="content">
+				    <form action="#" method="#">
+					     <table>
+						     <tr class="satu">
+							     <th>NO</th>
+								 <th>produk</th>
+								 <th>Harga satuan</th>
+								 <th>jumlah beli</th>
+							</tr>
+							<tbody>
+							<tr>
+							    <td>1.</td>
+								<td mbl="produk">shopee big ramadan sale<br>
+								   <div class="videos">
+								     <video width="290" controls>
+									    <source src="shopee big ramadan sale.mp4" type="video/mp4">
+									</video>
+								</div>
+							</td>
+							<td mbl="Harga">RP 27.000,00</td>
+							<td mbl="jumlah"><input type="number" id="item1"> pcs</td>
+						</tr>
+						<tr>
+						 
+						      <td>2.</td>
+							  <td mbl="produk">slai o'lai<br>
+							    <div class="videos">
+								   <video width="280" controls>
+								         <source src="slai o'lai.mp4" type="video/mp4">
+									</video>
+								</div>
+							</td>
+							<td mbl="harga">RP 10.000,00</td>>
+							<td mbl="jumlah"><input type="number" id="item2"> pcs</td>
+						</tr>
+						<tr>
+						    <td>3.</td>
+							<td mbl="produk">better<br>
+							   <div class="videos">
+							       <video width="280" controls>
+								      <source src="better.mp4" type="video/mp4">
+									</video>
+								</div>
+							</td>
+							<td mbl="harga">RP 17.000,00</td>
+							<td mbl="jumlah"><input type="number" id="item3"> pcs</td>
+						</tr>
+						<tr>
+						     <td>4.</td>
+							 <td mbl="produk">teh pucuk harum<br>
+							     <div class="videos">
+								     <video width="280" controls>
+									    <source src="teh pucuk harum.mp4" type="video/mp4">
+									</video>
+								</div>
+							</td>
+							<td mbl="harga">Rp 20.000,00<//td>
+							<td mbl="jumlah"><input type="number" id="item4"> pcs</td>
+						</tr>
+						<tr>
+						   <td>5.</td>
+						   <td mbl="produk">vidoran xmart<br>
+						        <div class="videos">
+								   <video width="280" controls>
+								       <source src="vidoran xmart.mp4" type="video/mp4">
+									 </video>
+								</div>
+							</td>
+							<td mbl="harga"> RP 25.000,00</td>
+							<td mbl="jumlah"><input type="number" id="item5"> pcs</td>
+						</tr>
+						<tr>
+						      <td colspan="4" class="btn-inp">
+							      <br><button type="button"onclick="Total();">HITUNG</button><br>
+								  Total Bayar <input type="text" placeholder="RP 0,00" id="hasil" disabled>
+								  <button class="button" onclick="window.print()">cetak</button>
+								  </td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+		`;
+	}
+	    </script>
+	</head>
+	<body>
+	    <div id="aplikasi">
+		   <div class="awal">
+		      <h2>hallo, selamt datang di website kami</h2>
+			  <img src="store.jpeg">
+			  <i><h4>Click button dibawah ini untuk masuk ke aplikasi</h4></i>
+			  <button type="submit" onclick="awalAPP()">Mulai</button>
+			</div>
+		</div>
+	</body>
+	</html>
